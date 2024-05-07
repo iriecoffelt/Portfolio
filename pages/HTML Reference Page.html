@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/deviceStyles.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML Reference Page</title>
+    </head>
+    <body class="container">
+        <div class="imageContainer">
+            <img id="image1" src="/Images/cyberpunk_city.png">
+            <img id="image2" src="/Images/cyberpunk_dude.png">
+        </div>
+        <div class="row">
+            <!--jQuery (Bootstrap JS plugins depend on it)-->
+            <script src="JavaScript/jquery-3.7.1.min.js"></script>
+            <script src="JavaScript/bootstrap.min.js"></script>
+            <script src="JavaScript/script.js"></script>
+            <h1></h1>H1: Main Heading of the Page</h1>
+            <div id="idSelector">***DIV 1***</div>
+            <div>***DIV 2***</div>
+            <span>***SPAN 1***</span>
+            <div>
+                ***DIV 3***
+                <span>***SPAN 2: INSIDE DIV 3***</span>
+                ***Continuation of DIV 3***
+            </div>
+            <header>
+                This is a header element - Some header information goes here. 
+                Usually consists of company logo, some tag line, etc.
+                Sometimes, navigation is contained in the header as well.
+                <nav>
+                    nav (short for navigation) element - Usually contains
+                    links to different parts of the website.
+                    <h1 id="top" class="exampleClass">Links to Sections of this page</h1>
+                    <section>
+                        <ul class="pseudoClass">
+                            <!--Link to every section in the page-->
+                            <li><a href="#section1">#section1</a></li>
+                            <li><a href="#section2">#section2</a></li>
+                            <li><a href="#section3">#section3</a></li>
+                            <li><a href="#section4">#section4</a></li>
+                            <li><a href="#sectionLast">#sectionLast</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </header>
+            <section id="section1">
+                Section 1
+                <article>Article 1</article>
+                <article class="blue">Article 2</article>
+                <article>Article 3</article>
+            </section>
+            <section id="section2">
+                Section 2
+                <article>Article 4</article>
+                <article>Article 5</article>
+                <article>Article 6</article>
+                <div>Regular DIV element</div>
+            </section>
+            <aside>
+                ASIDE - Some information that relates to the main topic, i.e., 
+                related posts.
+            </aside>
+            <h2>H2: Lists</h2>
+            <h3 style="text-align: left;">Unordered List</h3>
+            <div class="highlight">
+                My list:
+                <ul>
+                    <li>Milk</li>
+                    <li>Eggs</li>
+                    <li>Cookies</li>
+                        <ul>
+                            <li>Chocolate</li>
+                            <li>Sugar</li>
+                            <li>Peanut Butter</li>
+                        </ul>
+                    <li>Drinks</li>
+                </ul>
+            </div>
+            <h3>Ordered List</h3>
+            <div>
+                Oreo cookie eating procedure:
+                <ol>
+                    <li>Open box</li>
+                    <li>Take out cookie</li>
+                    <li>
+                        Make a Double Oreo
+                        <ol>
+                            <li>Peel off the top cookie</li>
+                            <li>Place another cookie in th middle</li>
+                            <li>Put the top cookie back on</li>
+                        </ol>
+                    </li>
+                    <li>Enjoy!</li>
+                </ol>   
+            </div>
+            <h3>H3: These are what Characters: &lt; , &amp; , &copy; , and &gt; look like</h3>
+            <p>
+                &quot;This is a paragraph.&quot;
+                Trust&nbsp;me...&nbsp;Please
+            </p>
+            <h4>H4: Creating Links</h4>
+            <h5>Internal Links</h5>
+            <section id="section3">
+                We can link to a file in the same directory as this HTML file like this:
+                <a href="/index.html" title="same dir link">Linking to a file in the same directory</a>
+                <a href="/index.html" title="same dir link">
+                    <div>DIV Linking to a file in the same directory</div>
+                </a>
+            </section>
+            <h5>External Links</h5>
+            <section id="section4">
+                Let's Go To 
+                <a href="http://www.google.com" target="_blank" title="Google!">Google.com</a>
+            </section>
+            <h5>H5: Images</h5>
+            <section>
+                <h1>Yes, this is just a picture of google</h1>
+                <p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" width="150" height="50">
+
+                </p>
+            </section>
+            <h6>H6: Article</h6>
+            <article>
+                <h5>This is a heading inside the article container</h5>
+                <p>
+                    This is a paragraph inside of an article
+                </p>
+            </article>
+            <h3 class="pseudoClass">Pseudo-Class Slector</h3>
+            <h1>Box Model</h1>
+            <div id="box">
+                <div id="content">
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                    some content for this box goes here
+                </div>
+            </div>
+            <h1>The Background Property</h1>
+            <div id="bg">Background properties.</div>
+            <h1>Floating Elements</h1>
+            <div>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <section>This is regular content continuing after the paragraph boxes.</section>
+            </div>
+            <h1>Two Column Design</h1>
+            <div>
+                <p id="p5">
+                    This is paragraph one. This is paragraph one. This is paragraph one. This is paragraph one.
+                    This is paragraph one. This is paragraph one. This is paragraph one. This is paragraph one.
+                    This is paragraph one. This is paragraph one. This is paragraph one. This is paragraph one.
+                </p>
+                <p id="p6">
+                    This is paragraph two. This is paragraph two. This is paragraph two. This is paragraph two. 
+                    This is paragraph two. This is paragraph two. This is paragraph two. This is paragraph two. 
+                    This is paragraph two. This is paragraph two. This is paragraph two. This is paragraph two. 
+                </p>
+                <section>This is regular content continuing after the paragraph boxes.</section>
+            </div>
+            <h1>Responsive Layout</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 2</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 5</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
+                <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">Col 1</div>
+                    <div class="col-md-4 col-sm-6">Col 2</div>
+                    <div class="col-md-4 col-sm-6">Col 3</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">Col 4</div>
+                    <div class="col-md-4 col-sm-6">Col 5</div>
+                    <div class="col-md-4 col-sm-6">Col 6</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">Col 7</div>
+                    <div class="col-xs-6">Col 8</div>
+                    <div class="col-xs-6">Col 9</div>
+                </div>
+            </div>
+            <footer>
+                <a name="sectionLast">Has footer information here</a>
+            </footer>
+            <p>
+                Back to top: <a href="#top">Back to Top</a>
+            </p>
+        </div>
+    </body>
+</html>
