@@ -1,21 +1,375 @@
 <!DOCTYPE html>
-<!-- a:/Users/iriel/Documents/Portfolio/pages/contact.html -->
-<html>
-    <link rel="stylesheet" href="https://iriecoffelt.github.io/Portfolio/css/styles.css">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Irie Coffelt</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2210%22 fill=%22%23000%22 /><rect x=%225%22 y=%225%22 width=%2290%22 height=%2215%22 rx=%225%22 fill=%22%23333%22 /><circle cx=%2215%22 cy=%2212.5%22 r=%223.5%22 fill=%22%23ff5f56%22 /><circle cx=%2225%22 cy=%2212.5%22 r=%223.5%22 fill=%22%23ffbd2e%22 /><circle cx=%2235%22 cy=%2212.5%22 r=%223.5%22 fill=%22%2327c93f%22 /><path d=%22M20 40 L35 55 L20 70%22 stroke=%22%230066ff%22 stroke-width=%225%22 fill=%22none%22 /><path d=%22M45 70 L75 70%22 stroke=%22%230066ff%22 stroke-width=%225%22 fill=%22none%22 /></svg>">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dev-theme">
+    <div class="portfolio-container">
+        <!-- Header -->
+        <header class="code-section floating">
+            <div class="code-header">
+                <div class="code-title">Contact</div>
+                <div class="code-language">Get in Touch</div>
+            </div>
+            <div class="code-content">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="line-content"><span class="keyword">class</span> <span class="type">Contact</span> {</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="line-content">  <span class="keyword">constructor</span>() {</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="line-content">    <span class="variable">this</span>.<span class="variable">name</span> = <span class="string">"Irie Coffelt"</span>;</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="line-content">    <span class="variable">this</span>.<span class="variable">title</span> = <span class="string">"Web Developer"</span>;</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">5</span>
+                    <span class="line-content">    <span class="variable">this</span>.<span class="variable">available</span> = <span class="keyword">true</span>;</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">6</span>
+                    <span class="line-content">  }</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">7</span>
+                    <span class="line-content">}</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Navigation -->
+        <nav class="code-section">
+            <div class="code-header">
+                <div class="code-title">Navigation</div>
+                <div class="code-language">Menu</div>
+            </div>
+            <div class="code-content">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="line-content"><span class="comment">// Navigate through sections</span></span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='Portfolio.html' class='terminal-link'>Portfolio</a>"</span>);</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='HTML Reference Page.html' class='terminal-link'>Reference</a>"</span>);</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='../index.html' class='terminal-link'>Home</a>"</span>);</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contact Form -->
+        <section class="code-section">
+            <div class="code-header">
+                <div class="code-title">Contact Form</div>
+                <div class="code-language">Message</div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="form-group mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" id="name" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-heading"></i></span>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="code-content mt-4">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="line-content"><span class="comment">// Contact methods</span></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <span class="line-content"><span class="keyword">const</span> <span class="variable">contactMethods</span> = {</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="line-content">  <span class="variable">email</span>: <span class="string">"iriecoffelt@gmail.com"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <span class="line-content">  <span class="variable">linkedin</span>: <span class="string">"linkedin.com/in/irie-coffelt-2a92a8b0"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <span class="line-content">  <span class="variable">github</span>: <span class="string">"github.com/iriecoffelt"</span></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            <span class="line-content">};</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card mt-4">
+                        <h3>Direct Contact</h3>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>iriecoffelt@gmail.com</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Available: Mon-Fri, 9AM-5PM PST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Social Links -->
         <section class="contact-container">
-            <h2>Contact</h2>
+            <h2>Connect With Me</h2>
             <ul>
-                <li><a href="https://www.linkedin.com/in/irie-coffelt-2a92a8b0/" target="_blank" title="LinkedIn"><img src="https://iriecoffelt.github.io/Portfolio/Images/linkedin.png" alt="LinkedIn"></a></li>
-                <li><a href="https://github.com/iriecoffelt" target="_blank" title="Github"><img src="https://iriecoffelt.github.io/Portfolio/Images/github.png" alt="Github"></a></li>
-                <li><a href="mailto:iriecoffelt@gmail.com" title="Email"><img src="https://iriecoffelt.github.io/Portfolio/Images/email.png" alt="Email"></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/irie-coffelt-2a92a8b0/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/iriecoffelt" target="_blank" title="Github">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:iriecoffelt@gmail.com" title="Email">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="CodePen">
+                        <i class="fab fa-codepen fa-2x"></i>
+                    </a>
+                </li>
             </ul>
         </section>
-    </body>
+        
+        <!-- Footer -->
+        <footer class="code-section">
+            <div class="code-header">
+                <div class="code-title">Footer</div>
+                <div class="code-language">Return</div>
+            </div>
+            <div class="code-content">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="line-content"><span class="comment">// Return to main page</span></span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="line-content"><span class="keyword">function</span> <span class="function">goBack</span>() {</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="line-content">  <span class="keyword">return</span> <span class="string">"<a href='../index.html' class='terminal-link'>Home</a>"</span>;</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="line-content">}</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        // Add particle background effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.querySelector('body');
+            
+            // Create particles
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random position
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                
+                // Random size
+                const size = Math.random() * 3 + 1;
+                
+                // Random animation duration
+                const duration = Math.random() * 20 + 10;
+                
+                // Apply styles
+                particle.style.left = posX + 'vw';
+                particle.style.top = posY + 'vh';
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.animationDuration = duration + 's';
+                
+                body.appendChild(particle);
+            }
+            
+            // Form submission (prevent default for demo)
+            $('.contact-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Add typing effect to the button
+                const button = $(this).find('button');
+                const originalText = button.html();
+                button.html('<i class="fas fa-spinner fa-spin me-2"></i> Sending...');
+                button.prop('disabled', true);
+                
+                // Simulate sending
+                setTimeout(() => {
+                    // Show success message
+                    const successMsg = $('<div class="alert alert-success mt-3" role="alert"><i class="fas fa-check-circle me-2"></i> Message sent successfully! I\'ll get back to you soon.</div>');
+                    $(this).append(successMsg);
+                    
+                    // Reset button
+                    button.html(originalText);
+                    button.prop('disabled', false);
+                    
+                    // Clear form
+                    this.reset();
+                    
+                    // Remove message after 5 seconds
+                    setTimeout(() => {
+                        successMsg.fadeOut(function() {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                }, 1500);
+            });
+        });
+    </script>
+    <style>
+        /* Additional styles for the contact page */
+        .input-group-text {
+            background-color: rgba(0, 247, 255, 0.1);
+            border-color: var(--card-border);
+            color: var(--primary-color);
+        }
+        
+        .form-control {
+            background-color: rgba(15, 15, 35, 0.5);
+            border-color: var(--card-border);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            background-color: rgba(15, 15, 35, 0.7);
+            border-color: var(--primary-color);
+            box-shadow: var(--neon-glow);
+            color: var(--text-primary);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            box-shadow: var(--neon-glow);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), var(--neon-glow);
+        }
+        
+        .contact-info-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid var(--card-border);
+            box-shadow: var(--neon-glow);
+        }
+        
+        .contact-info-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.25rem;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        .contact-info-item i {
+            color: var(--primary-color);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .alert-success {
+            background-color: rgba(39, 201, 63, 0.1);
+            border-color: rgba(39, 201, 63, 0.3);
+            color: #27c93f;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-info-card {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</body>
 </html>

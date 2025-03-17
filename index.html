@@ -1,15 +1,208 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="https://iriecoffelt.github.io/Portfolio/css/styles.css">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>INDEX</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Irie Coffelt | Developer Portfolio</title>
+        <!-- Favicon -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2210%22 fill=%22%23000%22 /><rect x=%225%22 y=%225%22 width=%2290%22 height=%2215%22 rx=%225%22 fill=%22%23333%22 /><circle cx=%2215%22 cy=%2212.5%22 r=%223.5%22 fill=%22%23ff5f56%22 /><circle cx=%2225%22 cy=%2212.5%22 r=%223.5%22 fill=%22%23ffbd2e%22 /><circle cx=%2235%22 cy=%2212.5%22 r=%223.5%22 fill=%22%2327c93f%22 /><path d=%22M20 40 L35 55 L20 70%22 stroke=%22%230066ff%22 stroke-width=%225%22 fill=%22none%22 /><path d=%22M45 70 L75 70%22 stroke=%22%230066ff%22 stroke-width=%225%22 fill=%22none%22 /></svg>">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <h1>INDEX:</h1>
-        <h3><a href="https://iriecoffelt.github.io/Portfolio/pages/HTML Reference Page.html">HTML Reference Page</a></h3>
-        <h3><a href="https://iriecoffelt.github.io/Portfolio/pages/Portfolio.html">Irie Coffelt's Portfolio</a></h3>
-        <h3><a href="https://iriecoffelt.github.io/Portfolio/pages/contact.html">Contact</a></h3>
+    <body class="dev-theme">
+        <div class="terminal-container floating">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button close"></span>
+                    <span class="terminal-button minimize"></span>
+                    <span class="terminal-button maximize"></span>
+                </div>
+                <div class="terminal-title">portfolio.sh</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="terminal-prompt">visitor@portfolio:~$</span>
+                    <span class="terminal-text">cd portfolio && ls -la</span>
+                </div>
+                <div class="terminal-output">
+                    <div class="terminal-line">
+                        <a href="pages/Portfolio.html" class="terminal-link">portfolio.html</a> - My developer showcase
+                    </div>
+                    <div class="terminal-line">
+                        <a href="pages/HTML Reference Page.html" class="terminal-link">reference.html</a> - HTML reference guide
+                    </div>
+                    <div class="terminal-line">
+                        <a href="pages/contact.html" class="terminal-link">contact.html</a> - Get in touch
+                    </div>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-prompt">visitor@portfolio:~$</span>
+                    <span class="terminal-cursor"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-message">
+            <h1 class="glitch-text">Welcome to My Digital Space</h1>
+            <p class="subtitle">Type commands in the terminal or explore the links</p>
+            <div class="hint-container">
+                <p class="hint">Try typing <code>help</code> for available commands</p>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/terminal.js"></script>
+        <script src="js/game-fix.js"></script>
+        <script>
+            // Fix cursor initialization
+            document.addEventListener('DOMContentLoaded', function() {
+                // Wait a short time to ensure terminal.js has initialized
+                setTimeout(() => {
+                    // Hide all existing cursors
+                    const allCursors = document.querySelectorAll('.terminal-cursor');
+                    allCursors.forEach(cursor => {
+                        cursor.classList.remove('blink');
+                        cursor.style.display = 'none';
+                    });
+                    
+                    // Create a new prompt line with a properly blinking cursor
+                    const terminalBody = document.querySelector('.terminal-body');
+                    const newPromptLine = document.createElement('div');
+                    newPromptLine.className = 'terminal-line';
+                    newPromptLine.innerHTML = `
+                        <span class="terminal-prompt">visitor@portfolio:~$</span>
+                        <span class="terminal-cursor blink"></span>
+                    `;
+                    terminalBody.appendChild(newPromptLine);
+                    
+                    // Scroll to bottom
+                    terminalBody.scrollTop = terminalBody.scrollHeight;
+                }, 100);
+            });
+        </script>
+        <script>
+            // Add particle background effect
+            document.addEventListener('DOMContentLoaded', function() {
+                const body = document.querySelector('body');
+                
+                // Create particles
+                for (let i = 0; i < 50; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    
+                    // Random position
+                    const posX = Math.random() * 100;
+                    const posY = Math.random() * 100;
+                    
+                    // Random size
+                    const size = Math.random() * 5 + 1;
+                    
+                    // Random animation duration
+                    const duration = Math.random() * 20 + 10;
+                    
+                    // Apply styles
+                    particle.style.left = posX + 'vw';
+                    particle.style.top = posY + 'vh';
+                    particle.style.width = size + 'px';
+                    particle.style.height = size + 'px';
+                    particle.style.animationDuration = duration + 's';
+                    
+                    body.appendChild(particle);
+                }
+            });
+        </script>
+        <style>
+            /* Additional styles for the homepage */
+            .welcome-message {
+                text-align: center;
+                margin-top: 2rem;
+                padding: 1rem;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .subtitle {
+                color: var(--text-secondary);
+                margin-bottom: 1.5rem;
+                font-size: 1.2rem;
+            }
+            
+            .hint-container {
+                background-color: var(--card-bg);
+                border-radius: 10px;
+                padding: 1rem;
+                border: 1px solid var(--card-border);
+                margin-top: 2rem;
+                box-shadow: var(--neon-glow);
+                backdrop-filter: blur(5px);
+            }
+            
+            .hint {
+                margin: 0;
+                color: var(--text-secondary);
+            }
+            
+            code {
+                background-color: rgba(0, 247, 255, 0.1);
+                color: var(--primary-color);
+                padding: 0.2rem 0.4rem;
+                border-radius: 4px;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .glitch-text {
+                position: relative;
+                animation: glitch 3s infinite;
+            }
+            
+            @keyframes glitch {
+                0% { text-shadow: 0.05em 0 0 rgba(255, 0, 128, 0.75), -0.05em -0.025em 0 rgba(0, 247, 255, 0.75); }
+                14% { text-shadow: 0.05em 0 0 rgba(255, 0, 128, 0.75), -0.05em -0.025em 0 rgba(0, 247, 255, 0.75); }
+                15% { text-shadow: -0.05em -0.025em 0 rgba(255, 0, 128, 0.75), 0.025em 0.025em 0 rgba(0, 247, 255, 0.75); }
+                49% { text-shadow: -0.05em -0.025em 0 rgba(255, 0, 128, 0.75), 0.025em 0.025em 0 rgba(0, 247, 255, 0.75); }
+                50% { text-shadow: 0.025em 0.05em 0 rgba(255, 0, 128, 0.75), 0.05em 0 0 rgba(0, 247, 255, 0.75); }
+                99% { text-shadow: 0.025em 0.05em 0 rgba(255, 0, 128, 0.75), 0.05em 0 0 rgba(0, 247, 255, 0.75); }
+                100% { text-shadow: -0.025em 0 0 rgba(255, 0, 128, 0.75), -0.025em -0.025em 0 rgba(0, 247, 255, 0.75); }
+            }
+            
+            /* Particle effect */
+            .particle {
+                position: fixed;
+                border-radius: 50%;
+                background-color: var(--primary-color);
+                opacity: 0.5;
+                pointer-events: none;
+                z-index: -1;
+                animation: float linear infinite;
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+                10% { opacity: 0.5; }
+                90% { opacity: 0.5; }
+                100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+            }
+            
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .welcome-message {
+                    margin-top: 1.5rem;
+                }
+                
+                .glitch-text {
+                    font-size: 1.8rem;
+                }
+                
+                .subtitle {
+                    font-size: 1rem;
+                }
+            }
+        </style>
     </body>
 </html>
 

@@ -1,27 +1,433 @@
 <!DOCTYPE html>
-<!-- a:/Users/iriel/Documents/Portfolio/pages/Portfolio.html -->
-<html>
-   <link rel="stylesheet" href="https://iriecoffelt.github.io/Portfolio/css/styles.css">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Irie Coffelt's Portfolio</title>   
-   </head>
-   <body>
-      <div class="container-fluid centered-container">
-         <div class="imageContainer">
-            <img id="image1" src="https://iriecoffelt.github.io/Portfolio/Images/tv.png">
-            <img id="image2" src="https://iriecoffelt.github.io/Portfolio/Images/profile.png">
-            <img id="image3" src="https://iriecoffelt.github.io/Portfolio/Images/background_noise.gif">
-         </div>
-      </div>
-      <h1 class="center-text">Irie Coffelt's Portfolio</h1>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irie Coffelt | Developer Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2210%22 fill=%22%23000%22 /><rect x=%225%22 y=%225%22 width=%2290%22 height=%2215%22 rx=%225%22 fill=%22%23333%22 /><circle cx=%2215%22 cy=%2212.5%22 r=%223.5%22 fill=%22%23ff5f56%22 /><circle cx=%2225%22 cy=%2212.5%22 r=%223.5%22 fill=%22%23ffbd2e%22 /><circle cx=%2235%22 cy=%2212.5%22 r=%223.5%22 fill=%22%2327c93f%22 /><path d=%22M20 40 L35 55 L20 70%22 stroke=%22%230066ff%22 stroke-width=%225%22 fill=%22none%22 /><path d=%22M45 70 L75 70%22 stroke=%22%230066ff%22 stroke-width=%225%22 fill=%22none%22 /></svg>">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dev-theme">
+    <div class="portfolio-container">
+        <!-- Header Section -->
+        <header class="code-section floating">
+            <div class="code-header">
+                <div class="code-title">Irie Coffelt</div>
+                <div class="code-language">Developer</div>
+            </div>
+            <div class="code-content">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="line-content"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="line-content">  <span class="variable">name</span>: <span class="string">"Irie Coffelt"</span>,</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="line-content">  <span class="variable">title</span>: <span class="string">"Web Developer"</span>,</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="line-content">  <span class="variable">skills</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Bootstrap"</span>],</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">5</span>
+                    <span class="line-content">  <span class="variable">contact</span>: <span class="string">"<a href='contact.html' class='terminal-link'>contact.html</a>"</span></span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">6</span>
+                    <span class="line-content">};</span>
+                </div>
+            </div>
+        </header>
 
-      <div class="mosaic-container">
-         <div class="mosaic-item"><img src="https://iriecoffelt.github.io/Portfolio/Images/tv.png" width="150px" height="150px"></div>
-         <div class="mosaic-item"><img src="https://iriecoffelt.github.io/Portfolio/Images/profile.png" width="150px" height="150px"></div>
-         <div class="mosaic-item"><img src="https://iriecoffelt.github.io/Portfolio/Images/background_noise.gif" width="150px" height="150px"></div>
-      </div>
-   </body>
+        <!-- Navigation -->
+        <nav class="code-section">
+            <div class="code-header">
+                <div class="code-title">Navigation</div>
+                <div class="code-language">Menu</div>
+            </div>
+            <div class="code-content">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="line-content"><span class="comment">// Navigate through sections</span></span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='#projects' class='terminal-link'>Projects</a>"</span>);</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='#skills' class='terminal-link'>Skills</a>"</span>);</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='contact.html' class='terminal-link'>Contact</a>"</span>);</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">5</span>
+                    <span class="line-content"><span class="function">navigate</span>(<span class="string">"<a href='../index.html' class='terminal-link'>Home</a>"</span>);</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Projects Section -->
+        <section id="projects" class="code-section">
+            <div class="code-header">
+                <div class="code-title">Projects</div>
+                <div class="code-language">Portfolio</div>
+            </div>
+            
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="../Images/tv.png" class="project-image" alt="Project 1">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <a href="#" class="project-overlay-link"><i class="fas fa-eye"></i> View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Project Alpha</h3>
+                            <p class="project-description">A responsive web application with modern UI/UX principles.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="../Images/profile.png" class="project-image" alt="Project 2">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <a href="#" class="project-overlay-link"><i class="fas fa-eye"></i> View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Project Beta</h3>
+                            <p class="project-description">An interactive dashboard with data visualization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="../Images/background_noise.gif" class="project-image" alt="Project 3">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <a href="#" class="project-overlay-link"><i class="fas fa-eye"></i> View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Project Gamma</h3>
+                            <p class="project-description">A creative animation project with interactive elements.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="code-section">
+            <div class="code-header">
+                <div class="code-title">Skills</div>
+                <div class="code-language">Expertise</div>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Design Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Design</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Animation</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 65%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Others</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Responsive Testing</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="code-section">
+            <div class="code-header">
+                <div class="code-title">Footer</div>
+                <div class="code-language">Contact</div>
+            </div>
+            <div class="code-content">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="line-content"><span class="comment">// Let's connect</span></span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="line-content"><span class="keyword">function</span> <span class="function">connect</span>() {</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="line-content">  <span class="keyword">return</span> <span class="string">"<a href='contact.html' class='terminal-link'>Contact Me</a>"</span>;</span>
+                </div>
+                <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="line-content">}</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        // Add particle background effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.querySelector('body');
+            
+            // Create particles
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random position
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                
+                // Random size
+                const size = Math.random() * 3 + 1;
+                
+                // Random animation duration
+                const duration = Math.random() * 20 + 10;
+                
+                // Apply styles
+                particle.style.left = posX + 'vw';
+                particle.style.top = posY + 'vh';
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.animationDuration = duration + 's';
+                
+                body.appendChild(particle);
+            }
+            
+            // Animate skill bars on scroll
+            const skillSections = document.querySelectorAll('.skill-category');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-skills');
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            skillSections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+    <style>
+        /* Additional styles for the portfolio page */
+        .project-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        .project-overlay-link {
+            color: var(--primary-color);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .project-overlay-link:hover {
+            background: var(--primary-color);
+            color: #000;
+            box-shadow: var(--neon-glow);
+        }
+        
+        .animate-skills .skill-progress {
+            animation: skillAnimation 1s forwards;
+        }
+        
+        @keyframes skillAnimation {
+            from { width: 0; }
+            to { width: var(--width); }
+        }
+        
+        .skill-category {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        
+        .animate-skills {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .skill-progress {
+            width: 0 !important;
+            transition: width 1s ease;
+        }
+        
+        .animate-skills .skill-item:nth-child(1) .skill-progress {
+            transition-delay: 0.1s;
+            width: 90% !important;
+        }
+        
+        .animate-skills .skill-item:nth-child(2) .skill-progress {
+            transition-delay: 0.2s;
+            width: 85% !important;
+        }
+        
+        .animate-skills .skill-item:nth-child(3) .skill-progress {
+            transition-delay: 0.3s;
+            width: 75% !important;
+        }
+        
+        .animate-skills .skill-item:nth-child(4) .skill-progress {
+            transition-delay: 0.4s;
+            width: 80% !important;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .project-overlay-link {
+                padding: 0.3rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</body>
 </html>
